@@ -39,7 +39,7 @@ function App() {
                   marginTop: '20px'
                 }}
               >
-                Sign Out
+                SIGN OUT
               </button>
               Quiz Hub
              <Quiz />
