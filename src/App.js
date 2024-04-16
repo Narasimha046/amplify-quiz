@@ -28,9 +28,8 @@ function App() {
         {({ signOut }) => (
           <main>
             <header className='App-header'>
-              Quiz Hub
-             <Quiz />
-               Sign Out Button
+
+
               <button
                 onClick={signOut}
                 style={{
@@ -42,6 +41,8 @@ function App() {
               >
                 Sign Out
               </button>
+              Quiz Hub
+             <Quiz />
             </header>
           </main>
         )}
