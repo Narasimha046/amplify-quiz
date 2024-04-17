@@ -47,7 +47,7 @@ function Quiz() {
   return (
     <div className='quiz-container'>
       <div className='subject-selection'>
-        <h2>Select Subject:</h2>
+        <h2>Select Skill:</h2>
         {subjectOptions.map(subject => (
           <button
             key={subject}
