@@ -27,23 +27,29 @@ function App() {
       <Authenticator>
         {({ signOut }) => (
           <main>
-            <header className='App-header'>
-
-
-              <button
-                onClick={signOut}
-                style={{
-                  margin: '20px',
-                  fontSize: '0.8rem',
-                  padding: '5px 10px',
-                  marginTop: '20px'
-                }}
-              >
-                SIGN OUT
-              </button>
-              Quiz Hub
-             <Quiz />
-            </header>
+            <div className='App'>
+      <header className='App-header'>
+        <button
+          onClick={signOut}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '20px',
+            background: 'linear-gradient(to right, blue,aqua)',
+            border: 'none',
+            borderRadius: '5px',
+            color: 'white',
+            fontSize: '0.8rem',
+            padding: '5px 10px',
+            cursor: 'pointer'
+          }}
+        >
+          SIGN OUT
+        </button>
+        <h1 style={{ margin: '20px auto' }}>Quiz Hub</h1>
+        <Quiz />
+      </header>
+    </div>
           </main>
         )}
 

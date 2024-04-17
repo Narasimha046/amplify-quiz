@@ -3,7 +3,7 @@ import quizData from './quizData';
 import './Quiz.css'; // Import the Quiz component's CSS file for styling
 
 function Quiz() {
-  const [selectedSubject, setSelectedSubject] = useState("java");
+  const [selectedSubject, setSelectedSubject] = useState(null);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
@@ -58,12 +58,7 @@ function Quiz() {
           </button>
         ))}
       </div>
-      {showScore ? (
-        <div className='score-section'>
-          <h3>Quiz Completed!</h3>
-          <p>You scored {score} out of {quizData[selectedSubject].length}</p>
-        </div>
-      ) : (
+      {selectedSubject && !showScore && (
         <>
           <div className='question-section'>
             <div className='question-count'>
@@ -97,6 +92,12 @@ function Quiz() {
             </div>
           )}
         </>
+      )}
+      {showScore && (
+        <div className='score-section'>
+          <h3>Quiz Completed!</h3>
+          <p>You scored {score} out of {quizData[selectedSubject].length}</p>
+        </div>
       )}
     </div>
   );
