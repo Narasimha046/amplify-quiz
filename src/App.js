@@ -46,7 +46,7 @@ function App() {
         >
           SIGN OUT
         </button>
-        <h1 style={{ margin: '20px auto' }}>Quiz Hub</h1>
+        <h1 style={{ margin: '20px auto' }}>Quiz App</h1>
         <Quiz />
       </header>
     </div>
