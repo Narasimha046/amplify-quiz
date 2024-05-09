@@ -1,162 +1,209 @@
 const quizData = {
-  java: [
+  C: [
     {
-      question: "What is Java Virtual Machine (JVM)?",
-      options: ["An actual machine", "A virtual machine", "A compiler", "An interpreter"],
-      answer: "A virtual machine"
+      question: 'What does printf() do in C?',
+      options: ['Prints a message to the console', 'Allocates memory', 'Reads a file', 'None of the above'],
+      answer: 'Prints a message to the console'
     },
     {
-      question: "Which one of these is not a Java feature?",
-      options: ["Dynamic", "Architecture Neutral", "Use of pointers", "Object-oriented"],
-      answer: "Use of pointers"
+      question: 'What is the syntax for declaring a variable in C?',
+      options: ['var', 'let', 'int', 'string'],
+      answer: 'int'
     },
     {
-      question: "What is the output of 5 + 7 * 2 in Java?",
-      options: ["24", "19", "19.0", "24.0"],
-      answer: "19"
+      question: 'Which of the following is not a valid data type in C?',
+      options: ['int', 'string', 'float', 'boolean'],
+      answer: 'boolean'
     },
     {
-      question: "Which of the following is a reserved keyword in Java?",
-      options: ["string", "program", "super", "this"],
-      answer: "super"
+      question: 'What is the result of 5 + 3 * 2 in C?',
+      options: ['10', '16', '11', '13'],
+      answer: '11'
     },
     {
-      question: "What is the parent class of all classes in Java?",
-      options: ["Object", "Class", "Main", "Parent"],
-      answer: "Object"
+      question: 'Which symbol is used to indicate a single-line comment in C?',
+      options: ['//', '/*', '#', '--'],
+      answer: '//'
     },
     {
-      question: "What will happen if a superclass reference is used to refer to a subclass object in Java?",
-      options: ["Compilation error", "Runtime exception", "No error, but cast required", "No error, and no cast required"],
-      answer: "No error, but cast required"
+      question: 'What is the output of the following code snippet? \n\n#include <stdio.h>\nint main() {\n  int x = 10;\n  printf("%d", x);\n  return 0;\n}',
+      options: ['10', '0', 'Garbage value', 'Compilation error'],
+      answer: '10'
     },
     {
-      question: "Which keyword is used to prevent method overriding in Java?",
-      options: ["override", "final", "private", "static"],
-      answer: "final"
+      question: 'Which function is used to read input from the standard input device in C?',
+      options: ['scanf()', 'printf()', 'gets()', 'puts()'],
+      answer: 'scanf()'
     },
     {
-      question: "What is the correct way to declare a constant in Java?",
-      options: ["const int x = 5;", "final int x = 5;", "int constant x = 5;", "static final int x = 5;"],
-      answer: "static final int x = 5;"
+      question: 'Which header file is required for using functions like printf() and scanf() in C?',
+      options: ['<stdio.h>', '<stdlib.h>', '<math.h>', '<string.h>'],
+      answer: '<stdio.h>'
     },
     {
-      question: "Which of the following is true about Java packages?",
-      options: ["A package can contain only one class", "All classes in a package must have unique names", "A package can be renamed easily", "Package names should be unique across all Java projects"],
-      answer: "All classes in a package must have unique names"
+      question: 'What is the size of int data type in C?',
+      options: ['2 bytes', '4 bytes', '8 bytes', 'Depends on the system architecture'],
+      answer: 'Depends on the system architecture'
     },
     {
-      question: "What is the default value of a member variable in Java?",
-      options: ["0", "null", "undefined", "Depends on the variable type"],
-      answer: "Depends on the variable type"
+      question: 'What is the result of the following code snippet? \n\nint main() {\n  printf("%d", sizeof(int));\n  return 0;\n}',
+      options: ['2', '4', '8', 'Depends on the system architecture'],
+      answer: 'Depends on the system architecture'
     }
+  ],
+  Java: [
+    {
+      question: 'What is the JVM?',
+      options: ['Java Virtual Machine', 'Just Very Magnificent', 'Jellybean Vending Machine', 'None of the above'],
+      answer: 'Java Virtual Machine'
+    },
+    {
+      question: 'Which of the following is not a Java feature?',
+      options: ['Dynamic', 'Architecture Neutral', 'Use of pointers', 'Object-oriented'],
+      answer: 'Use of pointers'
+    },
+    {
+      question: 'What is the output of 5 + 7 * 2 in Java?',
+      options: ['24', '19', '19.0', '24.0'],
+      answer: '19'
+    },
+    {
+      question: 'Which of the following is a reserved keyword in Java?',
+      options: ['string', 'program', 'super', 'this'],
+      answer: 'super'
+    },
+    {
+      question: 'What is the parent class of all classes in Java?',
+      options: ['Object', 'Class', 'Main', 'Parent'],
+      answer: 'Object'
+    },
+    {
+      question: 'What will happen if a superclass reference is used to refer to a subclass object in Java?',
+      options: ['Compilation error', 'Runtime exception', 'No error, but cast required', 'No error, and no cast required'],
+      answer: 'No error, but cast required'
+    },
+    {
+      question: 'Which keyword is used to prevent method overriding in Java?',
+      options: ['override', 'final', 'private', 'static'],
+      answer: 'final'
+    },
+    {
+      question: 'What is the correct way to declare a constant in Java?',
+      options: ['const int x = 5;', 'final int x = 5;', 'int constant x = 5;', 'static final int x = 5;'],
+      answer: 'static final int x = 5;'
+    },
+    {
+      question: 'Which of the following is true about Java packages?',
+      options: ['A package can contain only one class', 'All classes in a package must have unique names', 'A package can be renamed easily', 'Package names should be unique across all Java projects'],
+      answer: 'All classes in a package must have unique names'
+    },
+    {
+      question: 'What is the default value of a member variable in Java?',
+      options: ['0', 'null', 'undefined', 'Depends on the variable type'],
+      answer: 'Depends on the variable type'
+    }
+  ],
+  Python: [
+    {
+      question: 'What is Python?',
+      options: ['A snake', 'A programming language', 'A web browser', 'A type of pasta'],
+      answer: 'A programming language'
+    },
+    // Add more questions for Python
+  ],
+  'C++': [
+    {
+      question: 'What is C++?',
+      options: ['A programming language', 'A type of car', 'A coffee brand', 'A mathematical operator'],
+      answer: 'A programming language'
+    },
+    // Add more questions for C++
+  ],
+  'C#': [
+    {
+      question: 'What is C#?',
+      options: ['A musical note', 'A programming language', 'A type of food', 'A type of clothing'],
+      answer: 'A programming language'
+    },
+    // Add more questions for C#
+  ],
+  Algorithms: [
+    {
+      question: 'What is an algorithm?',
+      options: ['A programming language', 'A set of rules for solving a problem', 'A data structure', 'A software tool'],
+      answer: 'A set of rules for solving a problem'
+    },
+    {
+      question: 'What is the time complexity of the bubble sort algorithm?',
+      options: ['O(n)', 'O(log n)', 'O(n^2)', 'O(1)'],
+      answer: 'O(n^2)'
+    },
+    {
+      question: 'Which algorithm is used for searching in a sorted array?',
+      options: ['Bubble Sort', 'Selection Sort', 'Linear Search', 'Binary Search'],
+      answer: 'Binary Search'
+    },
+    {
+      question: 'What is the best-case time complexity of the merge sort algorithm?',
+      options: ['O(n)', 'O(log n)', 'O(n^2)', 'O(n log n)'],
+      answer: 'O(n log n)'
+    },
+    {
+      question: 'What is dynamic programming?',
+      options: ['A programming paradigm', 'A programming language', 'A data structure', 'A sorting algorithm'],
+      answer: 'A programming paradigm'
+    },
+    {
+      question: 'What is the purpose of the greedy algorithm?',
+      options: ['To find the maximum value', 'To find the minimum value', 'To find the best solution at each step', 'To find the worst solution at each step'],
+      answer: 'To find the best solution at each step'
+    },
+    {
+      question: 'What is the time complexity of the quicksort algorithm in the worst case?',
+      options: ['O(n)', 'O(log n)', 'O(n^2)', 'O(n log n)'],
+      answer: 'O(n^2)'
+    },
+    {
+      question: 'What is a divide-and-conquer algorithm?',
+      options: ['An algorithm that divides the problem into smaller subproblems', 'An algorithm that solves the problem in one step', 'An algorithm that combines solutions from subproblems', 'An algorithm that selects the best solution'],
+      answer: 'An algorithm that divides the problem into smaller subproblems'
+    },
+    {
+      question: 'Which algorithm is used for finding the shortest path in a graph?',
+      options: ['Dijkstra\'s algorithm', 'Bellman-Ford algorithm', 'Prim\'s algorithm', 'Kruskal\'s algorithm'],
+      answer: 'Dijkstra\'s algorithm'
+    },
+    {
+      question: 'What is the time complexity of the selection sort algorithm?',
+      options: ['O(n)', 'O(log n)', 'O(n^2)', 'O(n log n)'],
+      answer: 'O(n^2)'
+    }
+  ],
+  'Data Structures': [
+    {
+      question: 'What are data structures?',
+      options: ['A way to organize and store data', 'A type of computer monitor', 'A type of building', 'A type of plant'],
+      answer: 'A way to organize and store data'
+    },
+    // Add more questions for Data Structures
+  ],
+  'Operating Systems': [
+    {
+      question: 'What is an operating system?',
+      options: ['Software that manages computer hardware and software resources', 'A type of animal', 'A type of book', 'A type of music'],
+      answer: 'Software that manages computer hardware and software resources'
+    },
+    // Add more questions for Operating Systems
+  ],
+  'Database Management': [
+    {
+      question: 'What is database management?',
+      options: ['Organizing and managing data in databases', 'Managing a baseball team', 'Managing a restaurant', 'Managing a hotel'],
+      answer: 'Organizing and managing data in databases'
+    },
+    // Add more questions for Database Management
+  ],
+  // Add more subjects and questions as needed
+};
 
-    ],
-    c: [
-      {
-        question: "Which of the following is not a valid C variable name?",
-        options: ["int number;", "float rate;", "int variable_count;", "int _count;"],
-        answer: "int variable_count;"
-      },
-      {
-        question: "Which of the following is the correct way to initialize an array in C?",
-        options: ["int arr[] = {1, 2, 3};", "int arr[3] = {1, 2, 3};", "int arr[3] = {1, 2};", "int arr[] = {1, 2};"],
-        answer: "int arr[] = {1, 2, 3};"
-      },
-      {
-        question: "What is the output of printf(\"%d\", sizeof('a')) in C?",
-        options: ["1", "2", "4", "8"],
-        answer: "4"
-      },
-      {
-        question: "Which operator is used to access the value at the address stored in a pointer variable?",
-        options: ["&", "*", "#", "$"],
-        answer: "*"
-      },
-      {
-        question: "What is the output of the following code snippet?\n\nint i = 5;\nprintf(\"%d\", i++ + ++i);",
-        options: ["10", "11", "12", "13"],
-        answer: "12"
-      },
-      {
-        question: "Which keyword is used to define a constant in C?",
-        options: ["constant", "define", "const", "constant"],
-        answer: "const"
-      },
-      {
-        question: "What will be the output of the following code?\n\nint x = 10, y = 20;\nprintf(\"%d\", x > y ? x : y);",
-        options: ["10", "20", "30", "Error"],
-        answer: "20"
-      },
-      {
-        question: "What does the sizeof operator return in C?",
-        options: ["Size of a variable", "Size of a function", "Size of a pointer", "Size of a structure"],
-        answer: "Size of a variable"
-      },
-      {
-        question: "Which standard library function is used to allocate memory dynamically in C?",
-        options: ["malloc()", "calloc()", "realloc()", "free()"],
-        answer: "malloc()"
-      },
-      {
-        question: "What is the output of the following code?\n\nint a[] = {1, 2, 3};\nprintf(\"%d\", a[3]);",
-        options: ["1", "2", "3", "Error"],
-        answer: "Error"
-      }
-    ],
-
-    python: [
-      {
-        question: "Which of the following is not a keyword in Python?",
-        options: ["break", "case", "continue", "pass"],
-        answer: "case"
-      },
-      {
-        question: "What is the output of print(2 == 2.0) in Python?",
-        options: ["True", "False", "Error", "0"],
-        answer: "True"
-      },
-      {
-        question: "Which of the following is not a valid variable name in Python?",
-        options: ["my_var", "myVar", "my-var", "my_var_1"],
-        answer: "my-var"
-      },
-      {
-        question: "What will be the output of the following code snippet?\n\nx = [1, 2, 3]\nprint(x[1:])",
-        options: ["[1]", "[2, 3]", "[1, 2]", "[2]"],
-        answer: "[2, 3]"
-      },
-      {
-        question: "Which of the following statements is true about Python's list?",
-        options: ["Lists are immutable", "Lists can only contain elements of the same type", "Lists can contain duplicate elements", "Lists are not ordered"],
-        answer: "Lists can contain duplicate elements"
-      },
-      {
-        question: "What is the correct way to check if a key exists in a dictionary in Python?",
-        options: ["if key in dict", "if dict.contains(key)", "if key.exists(dict)", "if dict[key] != None"],
-        answer: "if key in dict"
-      },
-      {
-        question: "What is the output of the following code?\n\ns = 'Python'\nprint(s[1:4])",
-        options: ["P", "yth", "ytho", "yth"],
-        answer: "yth"
-      },
-      {
-        question: "What is the output of the following code?\n\nprint(5 * 'Hi')",
-        options: ["HiHiHiHiHi", "5Hi", "HiHiHiHiHiHiHiHiHiHi", "Error"],
-        answer: "HiHiHiHiHi"
-      },
-      {
-        question: "Which of the following is used to create a function in Python?",
-        options: ["def", "function", "define", "func"],
-        answer: "def"
-      },
-      {
-        question: "What will be the output of the following code?\n\nprint(not (10 > 5))",
-        options: ["True", "False", "Error", "0"],
-        answer: "False"
-      }
-    ],
-  };
-
-  export default quizData;
+export default quizData;

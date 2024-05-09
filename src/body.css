@@ -1,0 +1,25 @@
+
+.sub-cat {
+    margin-bottom: 20px;
+  }
+
+  .sub-cat h2 {
+    color: aqua;
+    margin-bottom: 10px;
+  }
+
+  .sub-cat button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .sub-cat button:hover {
+    background-color: #0056b3;
+  }
